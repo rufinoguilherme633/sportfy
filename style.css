@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* botton */
+/* Utility Classes */
+.btn-primary {
+background: #1DB954;
+color: white;
+/* para a letra ficar maiuscula */
+text-transform: uppercase;
+ /* tamanho de altura e de lados */
+padding:15px 60px;
+/* tirando cor da corda */
+border: none;
+border-radius: 30px;
+letter-spacing:1px;
+font-weight: bold;
+
+
+}
+/*  Navbar */
+#navbar {
+    display: flex;
+    /* trasparente  a imagem Sportyfy*/
+    background-color: rgb(0,0,0,0.6) ;
+    color: white;
+/*para a imagem ficar no centro  */
+    justify-content: center;
+
+    /*deixando a nevbar fixa  */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+#navbar .navbar-container {
+    width: 60% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    /* para tirar as bolinhas da ul */
+    list-style: none;
+    font-weight: bold;
+}
+
+#navbar .navbar-container ul li {
+padding: 0 20px;
+}
+/*  seleciona a terceira "li", filha da "ul" */
+#navbar .navbar-container ul li:nth-child(3) {
+
+    border-right: 1px solid white;
+}
+
+/* showcase */
+
+#showcase {
+        /* 100% da visão do usuário */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* imagem de fundo */
+    background:url(img/showcase.webp) center center/cover;
+    background-color:rgb(0,0,0,0.4) ;
+    /* escurecida na imagem de fundo com o códico de cima */
+    background-blend-mode: color;
+
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#showcase .showcase-container h2 {
+    font-size: 5rem;
+}
+#showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+}
+#footer .footer-content {
+    display: flex;
+    width: 60% ;
+    margin: auto;
+}
+
+#footer .footer-content .footer-menu {
+    margin: 0px 60px;
+    list-style: none;
+    padding: 50px 0;
+   
+}
+
+#footer .footer-content .footer-menu-item {
+    margin: 25px 0;
+}
+#footer .footer-content .footer-menu p {
+    /* A propriedade font-weight é utilizada para aplicar ou remover negrito de um elemento de texto. */
+    font-weight: bold ;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+.sociais {
+    display: flex;  
+}
+.sociais i {
+    margin: 50px 20px;
+    /* as "sociais" por serem texto colocamos font suze */
+    font-size: 1.7rem;
+}
+
+/* footer info */
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-info .footer-info-item {
+    display: flex;
+    list-style:none;
+   
+}
